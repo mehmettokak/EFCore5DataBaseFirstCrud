@@ -23,6 +23,9 @@ Startup.cs de yeralan ConfigureServices metoduna  services.AddDbContext<dbEFCont
 
 ---POSTGRESQL veri Tabanı Kullanıyorsak----------
 Postgresql 
--Npgsql.EntityFrameworkCore.PostgreSql
+-Npgsql.EntityFrameworkCore.PostgreSql ddli indiriyoruz.
+ 
+ DatabaseFirst için aşağıdaki komut çalıştırılır.
 -Scaffold-DbContext -provider Npgsql.EntityFrameworkCore.PostgreSQL -connection "Host=localhost;Database=test11;User Id=postgres;Password=123456;Port=5432" -OutputDir "Models\DataBaseFirstPostgreSql\Entity" -ContextDir "Models\DataBaseFirstPostgreSql\Context"
+  
 -startup.cs de ConfigureServices metoduna services.AddDbContext<test11Context>(); eklenir.
